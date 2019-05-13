@@ -57,7 +57,7 @@
 1 0 10 #"text-box%\0"
 1 0 32 #"(lib \"text-snipclass.ss\" \"xml\")\0"
 1 0 1 6 #"wxloc\0"
-          0 0 66 0 1 #"\0"
+          0 0 69 0 1 #"\0"
 0 75 1 #"\0"
 0 10 90 -1 90 -1 3 -1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 255 255 255 1 -1 0 9
 #"Standard\0"
@@ -252,22 +252,24 @@
 255 255 -1 -1 21 1 #"\0"
 0 -1 1 #"\0"
 1.0 0 -1 -1 -1 -1 -1 -1 0 0 0 0 1 0 0.0 0.0 0.0 0.0 0.0 0.0 0 0 0 255
-255 255 -1 -1           0 3537 0 4 3 85
-(
- #";; The first three lines of this file were inserted by DrRacket. The"
- #"y record metadata"
-) 0 0 4 29 1 #"\n"
-0 0 4 3 85
-(
- #";; about the language level of this file in a form that our tools ca"
- #"n easily process."
-) 0 0 4 29 1 #"\n"
-0 0 4 3 177
-(
- #"#reader(lib \"htdp-advanced-reader.ss\" \"lang\")((modname Trabajo) "
- #"(read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constru"
- #"ctor repeating-decimal #t #t none #f () #f)))"
-) 0 0 4 29 1 #"\n"
+255 255 -1 -1 0 1 #"\0"
+0 -1 1 #"\0"
+0 12 -1 -1 -1 -1 -1 -1 0 0 1 0 0 0 1.0 1.0 1.0 1.0 1.0 1.0 0 0 0 0 0 0
+-1 -1 2 1 #"\0"
+0 -1 1 #"\0"
+0 12 -1 -1 -1 -1 -1 -1 0 0 1 0 0 0 1.0 1.0 1.0 1.0 1.0 1.0 0 0 0 0 0 0
+-1 -1 2 1 #"\0"
+0 -1 1 #"\0"
+1 0 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 1 1 1 200 0 0 0 0 0 -1 -1
+          0 3538 0 28 3 12 #"#lang racket"
+0 0 24 29 1 #"\n"
+0 0 24 3 1 #"("
+0 0 14 3 7 #"include"
+0 0 24 3 1 #" "
+0 0 19 3 9 #"\"Interfaz"
+0 0 19 3 5 #".rkt\""
+0 0 24 3 1 #")"
+0 0 24 29 1 #"\n"
 0 0 17 3 109
 (
  #";Esta funcion lo que hace es crear una matriz, la primera llamada n1"
@@ -3891,9 +3893,7 @@
 0 0 17 3 4 #"fila"
 0 0 17 3 1 #" "
 0 0 17 3 7 #"columna"
-0 0 17 3 1 #" "
-0 0 17 3 14 #"num_movimiento"
-0 0 17 3 7 #" largo)"
+0 0 17 3 22 #" num_movimiento largo)"
 0 0 24 29 1 #"\n"
 0 0 24 3 3 #"   "
 0 0 24 29 1 #"\n"
