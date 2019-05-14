@@ -13,6 +13,7 @@
 
 (define wide 640) ;; Ancho de la ventana.
 (define height 640) ;; Alto de la ventana.
+(define borde 0) ;; Borde de la ventana
 
 (define horseWindow (open-viewport "ChessHorse" wide height)) ;; Se crea la ventana, se define su nombre y tamaño.
 (define horseBackup (open-pixmap "ChessHorse" wide height)) ;; Se crea la ventana de respaldo, se define su nombre y tamaño.
@@ -48,15 +49,15 @@
 ;;##################################################################################### Tablero #####################################################################################
 
 (define (game n) ;; Función que se encarga de dibujar la cuadrícula según el tamanño de la matriz en la ventana. 
-; Para h iniciando en 10, incrementanto (wide / n) y terminando en wide.
-(for ((h (in-range 10 wide (/ (- wide 20) n))))
-  ;; Dibuja en la variable horseWindow (ventana) inicie h en X = 10 y termine h en Y = (wide - 10) con azul.
-  ((draw-line horseBackup) (make-posn h 10) (make-posn h (- height 10)) "blue"))
+; Para h iniciando en borde, incrementanto (wide / n) y terminando en wide.
+(for ((h (in-range borde wide (/ (- wide (* borde 2)) n))))
+  ;; Dibuja en la variable horseWindow (ventana) inicie h en X = borde y termine h en Y = (wide - borde) con azul.
+  ((draw-line horseBackup) (make-posn h borde) (make-posn h (- height borde)) "blue"))
 
-; Para v iniciando en 10, incrementanto (height / n) y terminando en height.
-(for ((v (in-range 10 height (/ (- height 20) n))))
-  ;; Dibuja en la variable horseWindow (ventana) inicie v en X = 10 y termine v en Y = (height - 10) con azul.
-  ((draw-line horseBackup) (make-posn 10 v) (make-posn (- wide 10) v) "blue")))
+; Para v iniciando en borde, incrementanto (height / n) y terminando en height.
+(for ((v (in-range borde height (/ (- height (* borde 2)) n))))
+  ;; Dibuja en la variable horseWindow (ventana) inicie v en X = borde y termine v en Y = (height - borde) con azul.
+  ((draw-line horseBackup) (make-posn borde v) (make-posn (- wide borde) v) "blue")))
 
 ;;###################################################################################################################################################################################
 
